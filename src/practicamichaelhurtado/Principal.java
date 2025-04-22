@@ -1,11 +1,11 @@
-package practica;
+package practicamichaelhurtado;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Principal {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 
         Scanner sc = new Scanner(System.in);
 
@@ -22,6 +22,8 @@ public class Principal {
         CalculosMatematicos misCalculosMatematicos = new CalculosMatematicos();
         misCalculosMatematicos.calculosRefactorizados(numero);
 
+        Random r = new Random();
+        int numAleatorio = r.nextInt(numero) + 1;
+        misCalculosMatematicos.calcularMCD(numero, numAleatorio);
     }
-
 }

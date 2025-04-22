@@ -1,10 +1,10 @@
-package practica;
+package practicamichaelhurtado;
 
 import java.util.ArrayList;
 
 public class CalculosMatematicos {
 
-    public CalculosMatematicos() {		
+    public CalculosMatematicos() {
     }
 
     public void calculosRefactorizados(int numero) {
@@ -32,10 +32,26 @@ public class CalculosMatematicos {
     }
 
     private boolean esPrimo(int numero) {
-        if (numero <= 1) return false;
+        if (numero <= 1) {
+            return false;
+        }
         for (int i = 2; i <= Math.sqrt(numero); i++) {
-            if (numero % i == 0) return false;
+            if (numero % i == 0) {
+                return false;
+            }
         }
         return true;
     }
+    // Método para calcular el MCD usando el algoritmo de Euclides
+
+    public void calcularMCD(int numA, int numB) {
+        int a = numA, b = numB;
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        System.out.println("El máximo común divisor de " + numA + " y " + numB + " es " + a);
+    }
+
 }
