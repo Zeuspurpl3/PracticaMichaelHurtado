@@ -42,8 +42,8 @@ public class CalculosMatematicos {
         }
         return true;
     }
-    // Método para calcular el MCD usando el algoritmo de Euclides
 
+    // Método para calcular el MCD usando el algoritmo de Euclides
     public void calcularMCD(int numA, int numB) {
         int a = numA, b = numB;
         while (b != 0) {
@@ -53,5 +53,4 @@ public class CalculosMatematicos {
         }
         System.out.println("El máximo común divisor de " + numA + " y " + numB + " es " + a);
     }
-
 }
