@@ -7,7 +7,7 @@ public class CalculosMatematicos {
 	public CalculosMatematicos() {		
 	}
 
-	public void calculos(int numero) {
+	public void calculosRefactorizados(int numero) {
 		
 		
 		// Calculamos los factoriales primos
